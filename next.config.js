@@ -1,10 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    basePath: '/test-application',
-    images: {
-        unoptimized: true,
-    },
+  output: 'export',
+  distDir: 'out',
+  basePath: '/test-application',
+  assetPrefix: '/test-application',
+  images: {
+    unoptimized: true,
+  },
 }
 
 module.exports = nextConfig
